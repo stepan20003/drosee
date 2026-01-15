@@ -1,0 +1,73 @@
+<!doctype html>
+<html lang="hy">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>D’rose — Կապ</title>
+  <meta name="description" content="Կապ D’rose-ի հետ։" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html">
+        <div class="brand__logo">
+          <img src="logo.png" alt="D’rose logo" onerror="this.style.display='none'; this.parentElement.classList.add('brand__logo--fallback');" />
+          <span class="brand__fallback">D’ROSE</span>
+        </div>
+      </a>
+
+      <nav class="nav">
+        <a class="nav__link" href="index.html">Գլխավոր</a>
+        <a class="nav__link" href="about.html">Մեր մասին</a>
+        <a class="nav__link" href="products.html">Արտադրանք</a>
+        <a class="nav__link is-active" href="contact.html">Կապ</a>
+      </nav>
+
+      <div class="lang">
+        <a class="lang__link is-active" href="contact.html">🇦🇲 Հայ</a>
+        <a class="lang__link" href="en.html">🇬🇧 EN</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <div class="container">
+      <div class="pageHead">
+        <h1 class="h1">Կապ</h1>
+        <p class="lead">Կոնտակտները ժամանակավորապես դատարկ են։</p>
+      </div>
+
+      <div class="callout">
+        <div>
+          <h3 class="h3">Հետո հեշտ կավելացնես</h3>
+          <p class="muted">Հեռախոս, email, հասցե, Instagram/WhatsApp — ամեն ինչ կդնենք այստեղ։</p>
+        </div>
+        <a class="btn btn--ghost" href="products.html">Արտադրանք</a>
+      </div>
+
+      <div class="grid2">
+        <div class="panel">
+          <h3 class="h3">🇦🇲 Հայերեն</h3>
+          <p class="muted">Երբ պատրաստ լինես՝ գրիր կոնտակտները, ես հենց տեղում կլցնեմ։</p>
+        </div>
+        <div class="panel">
+          <h3 class="h3">🇬🇧 English</h3>
+          <p class="muted">Contacts are currently empty. You can add phone, email, and social links later.</p>
+        </div>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__left">
+        <div class="footer__brand">D’rose</div>
+        <div class="muted">Cheese Production • Armenia</div>
+      </div>
+      <div class="footer__right muted">© <span id="y"></span> D’rose</div>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

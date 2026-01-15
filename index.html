@@ -1,0 +1,157 @@
+<!doctype html>
+<html lang="hy">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>D’rose — Պանրի արտադրություն Հայաստանում</title>
+  <meta name="description" content="D’rose բրենդ — բարձրորակ պանրի արտադրություն Հայաստանում։ Գաուդա, Լոռի, Չանախ։" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html" aria-label="D’rose Home">
+        <div class="brand__logo">
+          <!-- Եթե ունես լոգո՝ upload արա repo-ի մեջ որպես logo.png -->
+          <img src="logo.png" alt="D’rose logo" onerror="this.style.display='none'; this.parentElement.classList.add('brand__logo--fallback');" />
+          <span class="brand__fallback">D’ROSE</span>
+        </div>
+      </a>
+
+      <nav class="nav">
+        <a class="nav__link is-active" href="index.html">Գլխավոր</a>
+        <a class="nav__link" href="about.html">Մեր մասին</a>
+        <a class="nav__link" href="products.html">Արտադրանք</a>
+        <a class="nav__link" href="contact.html">Կապ</a>
+      </nav>
+
+      <div class="lang">
+        <a class="lang__link is-active" href="index.html">🇦🇲 Հայ</a>
+        <a class="lang__link" href="en.html">🇬🇧 EN</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="eyebrow">Premium Cheese Production</p>
+          <h1 class="h1">D’ROSE CHEESE</h1>
+          <p class="lead">Բնական պանրի արտադրություն Հայաստանում</p>
+
+          <div class="cta">
+            <a class="btn" href="products.html">Տեսնել արտադրանքը</a>
+            <a class="btn btn--ghost" href="about.html">Իմանալ ավելին</a>
+          </div>
+
+          <div class="badges">
+            <span class="badge">Բնական կաթ</span>
+            <span class="badge">Որակի վերահսկում</span>
+            <span class="badge">Made in Armenia</span>
+          </div>
+        </div>
+
+        <div class="hero__media">
+          <div class="mediaCard">
+            <!-- Կարող ես փոխել hero.jpg-ով (upload անելով) -->
+            <img src="hero.jpg" alt="Cheese" onerror="this.style.display='none'; document.getElementById('heroFallback').style.display='block';" />
+            <div id="heroFallback" class="mediaFallback" style="display:none;">
+              <div class="mediaFallback__title">D’rose</div>
+              <div class="mediaFallback__sub">Premium cheese brand</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2">Մեր արտադրանքը</h2>
+          <p class="muted">Սկզբի համար՝ հիմնական տեսակները։ Հետո հեշտ կավելացնես նորերը։</p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card__img">
+              <img src="gouda.jpg" alt="Gouda cheese" onerror="this.remove();" />
+            </div>
+            <h3 class="h3">Հոլանդական Գաուդա</h3>
+            <p class="muted">Dutch-style cheese with rich taste.</p>
+            <a class="link" href="products.html#gua">Տեսնել</a>
+          </article>
+
+          <article class="card">
+            <div class="card__img">
+              <img src="lori.jpg" alt="Lori cheese" onerror="this.remove();" />
+            </div>
+            <h3 class="h3">Հայկական Լոռի</h3>
+            <p class="muted">Ավանդական հայկական պանիր։</p>
+            <a class="link" href="products.html#lori">Տեսնել</a>
+          </article>
+
+          <article class="card">
+            <div class="card__img">
+              <img src="chanakh.jpg" alt="Chanakh cheese" onerror="this.remove();" />
+            </div>
+            <h3 class="h3">Չանախ</h3>
+            <p class="muted">Բնական և խորը համով պանիր։</p>
+            <a class="link" href="products.html#chanakh">Տեսնել</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <div class="triples">
+          <div class="triple">
+            <div class="icon">🧀</div>
+            <div>
+              <h3 class="h3">Բնական բաղադրիչներ</h3>
+              <p class="muted">Կենտրոնանում ենք բնական համի և որակի վրա։</p>
+            </div>
+          </div>
+          <div class="triple">
+            <div class="icon">🏭</div>
+            <div>
+              <h3 class="h3">Ժամանակակից արտադրություն</h3>
+              <p class="muted">Մաքուր գործընթացներ և վերահսկվող արտադրություն։</p>
+            </div>
+          </div>
+          <div class="triple">
+            <div class="icon">🇦🇲</div>
+            <div>
+              <h3 class="h3">Արտադրված Հայաստանում</h3>
+              <p class="muted">Տեղական արտադրություն՝ վստահելի բրենդ։</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="callout">
+          <div>
+            <h3 class="h3">Ուզու՞մ ես համագործակցել կամ ավելին իմանալ</h3>
+            <p class="muted">Կոնտակտները հիմա դատարկ են։ Երբ ուզես՝ կավելացնենք։</p>
+          </div>
+          <a class="btn btn--ghost" href="contact.html">Կապ</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__left">
+        <div class="footer__brand">D’rose</div>
+        <div class="muted">Cheese Production • Armenia</div>
+      </div>
+      <div class="footer__right muted">© <span id="y"></span> D’rose</div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('y').textContent = new Date().getFullYear();
+  </script>
+</body>
+</html>

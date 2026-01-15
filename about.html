@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="hy">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>D’rose — Մեր մասին</title>
+  <meta name="description" content="D’rose բրենդի մասին՝ պանրի արտադրություն Հայաստանում։" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="index.html">
+        <div class="brand__logo">
+          <img src="logo.png" alt="D’rose logo" onerror="this.style.display='none'; this.parentElement.classList.add('brand__logo--fallback');" />
+          <span class="brand__fallback">D’ROSE</span>
+        </div>
+      </a>
+
+      <nav class="nav">
+        <a class="nav__link" href="index.html">Գլխավոր</a>
+        <a class="nav__link is-active" href="about.html">Մեր մասին</a>
+        <a class="nav__link" href="products.html">Արտադրանք</a>
+        <a class="nav__link" href="contact.html">Կապ</a>
+      </nav>
+
+      <div class="lang">
+        <a class="lang__link is-active" href="about.html">🇦🇲 Հայ</a>
+        <a class="lang__link" href="en.html">🇬🇧 EN</a>
+      </div>
+    </div>
+  </header>
+
+  <main class="page">
+    <div class="container">
+      <div class="pageHead">
+        <h1 class="h1">Մեր մասին</h1>
+        <p class="lead">D’rose — բարձրորակ պանրի արտադրություն Հայաստանում</p>
+      </div>
+
+      <div class="split">
+        <div class="split__text">
+          <h2 class="h2">Հայերեն</h2>
+          <p class="muted">
+            D’rose-ը հայկական բրենդ է, որը զբաղվում է բարձրորակ պանրի արտադրությամբ։
+            Մեր նպատակն է պահպանել բնական համը և ապահովել կայուն որակ՝ արտադրության վերահսկվող գործընթացներով։
+          </p>
+
+          <h2 class="h2" style="margin-top:24px;">English</h2>
+          <p class="muted">
+            D’rose is an Armenian cheese brand focused on producing premium-quality cheeses.
+            We aim to preserve authentic taste through controlled production processes and consistent quality.
+          </p>
+        </div>
+
+        <div class="split__media">
+          <div class="mediaCard">
+            <img src="about.jpg" alt="Production" onerror="this.style.display='none'; document.getElementById('aboutFallback').style.display='block';" />
+            <div id="aboutFallback" class="mediaFallback" style="display:none;">
+              <div class="mediaFallback__title">D’rose</div>
+              <div class="mediaFallback__sub">Cheese production</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="callout" style="margin-top:28px;">
+        <div>
+          <h3 class="h3">Ավելացնելու բան ունե՞ս</h3>
+          <p class="muted">Հետո կարող ենք ավելացնել պատմություն, արժեքներ, նկարներ, վիդեո։</p>
+        </div>
+        <a class="btn btn--ghost" href="products.html">Արտադրանք</a>
+      </div>
+    </div>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__left">
+        <div class="footer__brand">D’rose</div>
+        <div class="muted">Cheese Production • Armenia</div>
+      </div>
+      <div class="footer__right muted">© <span id="y"></span> D’rose</div>
+    </div>
+  </footer>
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>

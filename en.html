@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>D’rose — Premium Cheese Production</title>
+  <meta name="description" content="D’rose — premium cheese production in Armenia. Gouda, Lori, Chanakh." />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="header">
+    <div class="container header__inner">
+      <a class="brand" href="en.html" aria-label="D’rose Home">
+        <div class="brand__logo">
+          <img src="logo.png" alt="D’rose logo" onerror="this.style.display='none'; this.parentElement.classList.add('brand__logo--fallback');" />
+          <span class="brand__fallback">D’ROSE</span>
+        </div>
+      </a>
+
+      <nav class="nav">
+        <a class="nav__link is-active" href="en.html">Home</a>
+        <a class="nav__link" href="about.html">About</a>
+        <a class="nav__link" href="products.html">Products</a>
+        <a class="nav__link" href="contact.html">Contact</a>
+      </nav>
+
+      <div class="lang">
+        <a class="lang__link" href="index.html">🇦🇲 Հայ</a>
+        <a class="lang__link is-active" href="en.html">🇬🇧 EN</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero__inner">
+        <div class="hero__text">
+          <p class="eyebrow">Made in Armenia</p>
+          <h1 class="h1">D’ROSE CHEESE</h1>
+          <p class="lead">Premium cheese production</p>
+
+          <div class="cta">
+            <a class="btn" href="products.html">View products</a>
+            <a class="btn btn--ghost" href="about.html">Learn more</a>
+          </div>
+
+          <div class="badges">
+            <span class="badge">Natural milk</span>
+            <span class="badge">Quality control</span>
+            <span class="badge">Traditional craft</span>
+          </div>
+        </div>
+
+        <div class="hero__media">
+          <div class="mediaCard">
+            <img src="hero.jpg" alt="Cheese" onerror="this.style.display='none'; document.getElementById('heroFallback2').style.display='block';" />
+            <div id="heroFallback2" class="mediaFallback" style="display:none;">
+              <div class="mediaFallback__title">D’rose</div>
+              <div class="mediaFallback__sub">Premium cheese brand</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container">
+        <div class="section__head">
+          <h2 class="h2">Our Cheeses</h2>
+          <p class="muted">Core selections for the start — you can add more later.</p>
+        </div>
+
+        <div class="cards">
+          <article class="card">
+            <div class="card__img"><img src="gouda.jpg" alt="Gouda cheese" onerror="this.remove();" /></div>
+            <h3 class="h3">Gouda</h3>
+            <p class="muted">Dutch-style cheese with rich taste.</p>
+            <a class="link" href="products.html#gua">View</a>
+          </article>
+
+          <article class="card">
+            <div class="card__img"><img src="lori.jpg" alt="Lori cheese" onerror="this.remove();" /></div>
+            <h3 class="h3">Lori</h3>
+            <p class="muted">Traditional Armenian cheese.</p>
+            <a class="link" href="products.html#lori">View</a>
+          </article>
+
+          <article class="card">
+            <div class="card__img"><img src="chanakh.jpg" alt="Chanakh cheese" onerror="this.remove();" /></div>
+            <h3 class="h3">Chanakh</h3>
+            <p class="muted">Natural, deep flavor profile.</p>
+            <a class="link" href="products.html#chanakh">View</a>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <section class="section section--alt">
+      <div class="container">
+        <div class="triples">
+          <div class="triple"><div class="icon">🧀</div><div><h3 class="h3">Natural ingredients</h3><p class="muted">Focused on taste and quality.</p></div></div>
+          <div class="triple"><div class="icon">🏭</div><div><h3 class="h3">Modern production</h3><p class="muted">Clean processes and control.</p></div></div>
+          <div class="triple"><div class="icon">🇦🇲</div><div><h3 class="h3">Made in Armenia</h3><p class="muted">Local production, trusted brand.</p></div></div>
+        </div>
+
+        <div class="callout">
+          <div>
+            <h3 class="h3">Want to collaborate or learn more?</h3>
+            <p class="muted">Contacts are empty for now — you can add them later.</p>
+          </div>
+          <a class="btn btn--ghost" href="contact.html">Contact</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer__inner">
+      <div class="footer__left">
+        <div class="footer__brand">D’rose</div>
+        <div class="muted">Cheese Production • Armenia</div>
+      </div>
+      <div class="footer__right muted">© <span id="y"></span> D’rose</div>
+    </div>
+  </footer>
+
+  <script>document.getElementById('y').textContent = new Date().getFullYear();</script>
+</body>
+</html>
